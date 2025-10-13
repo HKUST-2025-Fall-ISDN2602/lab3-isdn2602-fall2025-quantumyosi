@@ -9,7 +9,7 @@ x=x';
 freq_carrier =10e3;
 
 % Cutoff frequency in Hz for the low pass filter
-freq_cutoff = 4e3;
+freq_cutoff = 3e3;
 x=lowpass(x,Fs,freq_cutoff);   
 xm = modulate(x,Fs,freq_carrier);
 
